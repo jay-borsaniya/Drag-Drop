@@ -1,0 +1,18 @@
+<div class="w-full h-full flex justify-center" style="align-items: center">
+  <div
+    class="border border-gray-900 bg-gray-200 slate relative"
+    id="dropzone"
+    style="height: 100%; width: 100%; z-index: 100; overflow: hidden;"
+    (dragover)="onDragOver($event)"
+    (drop)="onDrop($event)"
+  >
+    <div
+      class="dropped-item"
+      *ngFor="let item of droppedItems"
+      [ngStyle]="{ 'top.px': item.y, 'left.px': item.x }"
+      style="position: absolute"
+    >
+      <div [innerHTML]="item.html"></div>
+    </div>
+  </div>
+</div>

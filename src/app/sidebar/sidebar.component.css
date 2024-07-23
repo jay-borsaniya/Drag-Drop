@@ -1,0 +1,28 @@
+
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.draggable {
+  cursor: grab;
+  margin-bottom: 10px;
+}
+
+.slate {
+  position: relative;
+  flex: 1;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  background-color: #f0f0f0;
+  min-height: 300px;
+}
+
+.dropped-item {
+  position: absolute;
+}
+
+.app-container {
+  display: flex;
+}
